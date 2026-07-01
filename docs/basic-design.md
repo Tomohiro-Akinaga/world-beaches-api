@@ -146,8 +146,8 @@ NestJS 標準の例外フィルタ形式に統一する。
     {
       "id": 1,
       "slug": "grande-anse-la-digue",
-      "name": "Grande Anse Beach",
-      "nameJa": "グランダンス・ビーチ",
+      "name": "グランダンス・ビーチ",
+      "nameEn": "Grande Anse Beach",
       "country": "Seychelles",
       "description": "...(日本語の紹介文)...",
       "imageUrl": "https://cdn.example.com/beaches/grande-anse-la-digue.jpg"
@@ -178,8 +178,8 @@ slug を指定して1件を返す。
 {
   "id": 1,
   "slug": "grande-anse-la-digue",
-  "name": "Grande Anse Beach",
-  "nameJa": "グランダンス・ビーチ",
+  "name": "グランダンス・ビーチ",
+  "nameEn": "Grande Anse Beach",
   "country": "Seychelles",
   "description": "...(日本語の紹介文)...",
   "imageUrl": "https://cdn.example.com/beaches/grande-anse-la-digue.jpg"
@@ -199,8 +199,8 @@ slug を指定して1件を返す。
 | --- | --- | --- | --- | --- |
 | `id` | Int | NOT NULL | PK / autoincrement | 内部ID |
 | `slug` | String | NOT NULL | UNIQUE | URL用識別子 |
-| `name` | String | NOT NULL | - | 英語名 |
-| `nameJa` | String | NOT NULL | - | 日本語表記 |
+| `name` | String | NOT NULL | - | 日本語名 |
+| `nameEn` | String | NOT NULL | - | 英語名 |
 | `country` | String | NOT NULL | - | 国名（英語） |
 | `description` | Text | NOT NULL | - | 紹介文（日本語・主コンテンツ） |
 | `imageUrl` | String | NOT NULL | - | 画像URL（R2 の配信URL） |
@@ -221,7 +221,7 @@ model Beach {
   id          Int      @id @default(autoincrement())
   slug        String   @unique
   name        String
-  nameJa      String
+  nameEn      String
   country     String
   description String   @db.Text
   imageUrl    String

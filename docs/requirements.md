@@ -139,8 +139,8 @@
     {
       "id": 1,
       "slug": "grande-anse-la-digue",
-      "name": "Grande Anse Beach",
-      "nameJa": "グランダンス・ビーチ",
+      "name": "グランダンス・ビーチ",
+      "nameEn": "Grande Anse Beach",
       "country": "Seychelles",
       "description": "...(日本語の紹介文)...",
       "imageUrl": "https://cdn.example.com/beaches/grande-anse-la-digue.jpg"
@@ -232,8 +232,8 @@ flowchart LR
 | --- | --- | --- | --- |
 | `id` | Int（PK） | ✓ | 内部ID（autoincrement） |
 | `slug` | String（unique） | ✓ | URL用識別子 |
-| `name` | String | ✓ | 英語名 |
-| `nameJa` | String | ✓ | 日本語表記 |
+| `name` | String | ✓ | 日本語名 |
+| `nameEn` | String | ✓ | 英語名 |
 | `country` | String | ✓ | 国名 |
 | `description` | Text | ✓ | 紹介文（**日本語**・主コンテンツ・自前作成） |
 | `imageUrl` | String | ✓ | 画像URL（Cloudflare R2 にホスト） |
@@ -249,7 +249,7 @@ model Beach {
   id          Int      @id @default(autoincrement())
   slug        String   @unique
   name        String
-  nameJa      String
+  nameEn      String
   country     String
   description String   @db.Text
   imageUrl    String
