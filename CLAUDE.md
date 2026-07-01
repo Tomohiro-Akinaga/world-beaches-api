@@ -83,5 +83,4 @@ npm test
 - **PR のタイトルはコミットメッセージと同じ形式**（`<type>: <subject>`、Conventional Commits）で書く。
 - `<type>` は英語、`<subject>`（説明部分）は日本語で書く。スコープは付けない。
 - 内容が一目で分かる簡潔なタイトルにする。
-- 本文は [.github/pull_request_template.md](.github/pull_request_template.md) のテンプレートに従う。
 - 例: `feat: ビーチ一覧APIを追加`, `fix: 国フィルタの大文字小文字判定を修正`
