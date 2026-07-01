@@ -245,7 +245,7 @@ slug を指定して1件を返す。
 
 | カラム | 型 | NULL | 制約 | 説明 |
 | --- | --- | --- | --- | --- |
-| `id` | Int | NOT NULL | PK / autoincrement | 内部ID |
+| `id` | String | NOT NULL | PK / UUIDv7 | 内部ID（時系列順にソート可能な UUID） |
 | `slug` | String | NOT NULL | UNIQUE | URL用識別子 |
 | `name` | String | NOT NULL | - | 日本語名 |
 | `nameEn` | String | NOT NULL | - | 英語名 |
@@ -266,7 +266,7 @@ slug を指定して1件を返す。
 
 ```prisma
 model Beach {
-  id          Int      @id @default(autoincrement())
+  id          String   @id @default(uuid(7))
   slug        String   @unique
   name        String
   nameEn      String
