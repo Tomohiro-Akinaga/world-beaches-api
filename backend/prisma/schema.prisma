@@ -12,3 +12,17 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+model Beach {
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique
+  name        String
+  nameEn      String
+  country     String
+  description String   @db.Text
+  imageUrl    String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([country])
+}
