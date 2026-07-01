@@ -73,6 +73,14 @@ npm test
 ## コミット規約
 
 - コミットメッセージは **Conventional Commits** 形式に従う。
-- 形式: `<type>: <subject>`（必要に応じてスコープ `<type>(<scope>): <subject>`）。
+- 形式: `<type>: <subject>`（スコープは付けない）。
+- **`<subject>`（説明部分）は日本語で書く。** `<type>` は英語のまま。
 - 主な type: `feat` / `fix` / `docs` / `chore` / `refactor` / `test` / `ci`。
-- 例: `docs: add CLAUDE.md`, `feat(beach): add list endpoint`
+- 例: `docs: CLAUDE.md を追加`, `feat: 一覧エンドポイントを追加`
+
+## プルリクエスト規約
+
+- **PR のタイトルはコミットメッセージと同じ形式**（`<type>: <subject>`、Conventional Commits）で書く。
+- `<type>` は英語、`<subject>`（説明部分）は日本語で書く。スコープは付けない。
+- 内容が一目で分かる簡潔なタイトルにする。
+- 例: `feat: ビーチ一覧APIを追加`, `fix: 国フィルタの大文字小文字判定を修正`
