@@ -69,3 +69,10 @@ npm test
 - Prettier（[backend/.prettierrc](backend/.prettierrc)）と ESLint（[backend/eslint.config.mjs](backend/eslint.config.mjs)）に従う。
 - CI は `--max-warnings=0` なので、警告も残さないこと。
 - NestJS の標準構成（module / controller / service / DTO）に従う。
+
+## コミット規約
+
+- コミットメッセージは **Conventional Commits** 形式に従う。
+- 形式: `<type>: <subject>`（必要に応じてスコープ `<type>(<scope>): <subject>`）。
+- 主な type: `feat` / `fix` / `docs` / `chore` / `refactor` / `test` / `ci`。
+- 例: `docs: add CLAUDE.md`, `feat(beach): add list endpoint`
