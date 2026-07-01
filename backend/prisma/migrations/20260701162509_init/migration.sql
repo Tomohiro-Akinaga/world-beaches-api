@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE "Beach" (
-    "id" SERIAL NOT NULL,
+    "id" TEXT NOT NULL,
     "slug" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "nameEn" TEXT NOT NULL,

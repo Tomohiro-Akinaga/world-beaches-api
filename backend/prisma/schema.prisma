@@ -14,7 +14,7 @@ datasource db {
 }
 
 model Beach {
-  id          Int      @id @default(autoincrement())
+  id          String   @id @default(uuid(7))
   slug        String   @unique
   name        String
   nameEn      String
