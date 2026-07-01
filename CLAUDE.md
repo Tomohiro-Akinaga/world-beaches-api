@@ -76,3 +76,10 @@ npm test
 - 形式: `<type>: <subject>`（必要に応じてスコープ `<type>(<scope>): <subject>`）。
 - 主な type: `feat` / `fix` / `docs` / `chore` / `refactor` / `test` / `ci`。
 - 例: `docs: add CLAUDE.md`, `feat(beach): add list endpoint`
+
+## プルリクエスト規約
+
+- **PR のタイトルは日本語で書く。**
+- 内容が一目で分かる簡潔なタイトルにする。
+- 本文は [.github/pull_request_template.md](.github/pull_request_template.md) のテンプレートに従う。
+- 例: `ビーチ一覧APIを追加`, `国フィルタの大文字小文字判定を修正`
