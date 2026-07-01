@@ -74,8 +74,9 @@ npm test
 
 - コミットメッセージは **Conventional Commits** 形式に従う。
 - 形式: `<type>: <subject>`（必要に応じてスコープ `<type>(<scope>): <subject>`）。
+- **`<subject>`（説明部分）は日本語で書く。** `<type>` とスコープは英語のまま。
 - 主な type: `feat` / `fix` / `docs` / `chore` / `refactor` / `test` / `ci`。
-- 例: `docs: add CLAUDE.md`, `feat(beach): add list endpoint`
+- 例: `docs: CLAUDE.md を追加`, `feat(beach): 一覧エンドポイントを追加`
 
 ## プルリクエスト規約
 
